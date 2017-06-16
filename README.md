@@ -9,11 +9,9 @@ My notes is below to use docker.
 
 # Docker Presentation
  
-.Net Core Application
+
  
-Dotnet commands
- 
-Docker Intro
+# Docker Intro
 What is Docker?
 Docker is a containerisation technology and application platform that lets us package and deploy an application or service as an isolated unit containing all of its dependencies. In over simplified terms it can be thought of as a very lightweight, self contained virtual machine.
  
@@ -32,7 +30,7 @@ Virtual machines run guest operating systems—note the OS layer in each box. Th
 Containers can share a single kernel, and the only information that needs to be in a container image is the executable and its package dependencies, which never need to be installed on the host system. These processes run like native processes, and you can manage them individually by running commands like docker ps—just like you would run ps on Linux to see active processes. Finally, because they contain all their dependencies, there is no configuration entanglement; a containerized app “runs anywhere.”
  
  
-Docker Installation
+# Docker Installation
  
 Docker for Windows 
 Win Server 2016 and Windows 10 Pro can now have native windows containers.
@@ -43,7 +41,7 @@ For other Windows 10 versions we can use docker toolbox.
  
  
  
-Tour of Docker with some commands
+# Tour of Docker with some commands
  
 Docker Client  And Docker Daemon
  
@@ -97,7 +95,7 @@ Show DOcker Repository
 Running a docker image (hello-world)
 docker run hello-world
  
-Creating docker image of the .Net application that we created 
+# Creating docker image of the .Net application that we created 
 Dockerfile: We can define a container with the dockerfile. Dockerfile will define what goes on in the environment inside your container. Access to resources like networking interfaces and disk drives is virtualized inside this environment, which is isolated from the rest of your system, so you have to map ports to the outside world, and be specific about what files you want to “copy in” to that environment. However, after doing that, you can expect that the build of your app defined in this Dockerfile will behave exactly the same wherever it runs.
  
 Examples
@@ -115,9 +113,9 @@ ENTRYPOINT ["dotnet", "run"]
  
  
  
-Uploading the image we created to the Repository
+# Uploading the image we created to the Repository
  
-Next Steps
+# Next Steps
 Services
 Swarms
 Deploying to Azure or AWS
