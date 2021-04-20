@@ -1,5 +1,7 @@
 # CoreServiceForDocker
 
+TEST CHANGES TEST CHANGES TEST CHANGES TEST CHANGES TEST CHANGES 
+
 I created a .Net Core solution and used docker to create an image and pushed it to my docker repo. 
 Only thing I added to this .Net Core solution is the docker file. 
 
